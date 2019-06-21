@@ -1,5 +1,12 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
+ * Este algorítmo funciona usando um método de partições para
+   o seu funcionamento. Primeiro, há a complexidade dele; tenho
+   que evitar o pior caso e, para isto, preciso de evitar que o 
+   vetor seja percorrido no canto errado. Para isso eu pego e 
+   percorro a partir de um elemento de pivô no meio do vetor.
+   Noto que a complexidade deste algorítimo nlog(n) no seu melhor 
+   caso e n² no pior caso. Tendo em vista este pior caso que crie
+   o caso de tratamento na função de partição.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
