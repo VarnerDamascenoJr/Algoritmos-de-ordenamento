@@ -4,7 +4,7 @@ package MergeSort;
 
 public class Principal {
     public static void main(String[] args){
-      int[]v = {4,6,7,3,};
+      int[]v = {4,6,7,3,}; 
     }
 }
 private static void mergeSort(int[]v, int[]w, int init, int fim ){
@@ -24,8 +24,8 @@ private static void intercalar(int[]v, int[]w, int init, int meio, int fim){
    int j = meio+1;
     for (int k =init; k<=fim; k++){
         if (i > meio)v[k] = w[j++];
-        else if (j > fim) v[k] = w[i + 1];
-        else if (w[i] < w[j]) v[k] = w[i];
-
+        else if (j > fim) v[k] = w[i++];
+        else if (w[i] < w[j]) v[k] = w[i++];
+        else v[k] < w[j++];
     }
 }
